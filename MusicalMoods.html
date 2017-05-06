@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Musical Moods</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--[if lte IE 8]>
+    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <span class="logo"><img src="images/logo.png" alt="" width="70x" height="85px"/></span>
+
+        <h1>Musical Moods</h1>
+
+        <p>Music influences mood - Choose the music by choosing the mood you want to be in. </p>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li><a href="#intro" class="active">Overview</a></li>
+            <li><a href="#first">Process</a></li>
+            <li><a href="#second">Insights</a></li>
+            <li><a href="#cta">Learning & Future Scope</a></li>
+            <li><a href="#navigation">Other Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Introduction -->
+        <section id="intro" class="main special">
+            <header class="major">
+                <h2>Overview</h2>
+            </header>
+
+            <div class="content" style="text-align: justify">
+
+                <h3>Problem Statement:</h3>
+
+                <p>Music always influences our mood. However, we do not know how it influences the mood. We plan to
+                    visually represent this information.</p>
+
+                <h3>Solution:</h3>
+
+                <p>We designed and developed a website <strong>Musical Moods</strong> as our solution. The website
+                    displayed the songs categorized by the mood they influence and provides the user a way to play the
+                    song as well, depicting the sound waves in different ways.</p>
+
+                <h3>My Role:</h3>
+
+                <p>This project was a team effort. My role was:</p>
+                <ul style="list-style-type: circle; text-align: left">
+                    <li>Researching the appropriate solution for our problem</li>
+                    <li>Creating the low fidelity(Sketches) of our idea.</li>
+                </ul>
+                <h3>Steps:</h3>
+                <ol>
+                    <li>Research</li>
+                    <li>Discovery</li>
+                    <li>Dataset</li>
+                    <li>Low-fidelity sketches</li>
+                    <li>Prototype</li>
+                </ol>
+                <h3>Tools used:</h3>
+                <!--<p>Tools we used during the project are:</p>-->
+                <ul style="list-style-type: circle">
+                    <li>Pencil and Paper</li>
+                    <li>Balsamiq</li>
+                    <li>PHPStorm</li>
+                    <li>Xampp</li>
+                    <li>HTML, CSS, JS</li>
+                    <li>D3</li>
+                    <li>Github.com</li>
+                </ul>
+                <ul class="actions" style="text-align: center">
+                    <li><a href="final%20Reports/Project3Documentation.pdf" class="button">Report</a></li>
+                    <li><a href="onkarborg.github.io/MusicalMoods" class="button">Website</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- Introduction -->
+        <section id="first" class="main special">
+            <header class="major">
+                <h2>Research</h2>
+            </header>
+            <div class="content" style="text-align: justify">
+                <h3>1. Understanding the Problem</h3>
+
+                <p>We researched on papers and articles ranging from mid 1900s to 2016. Research on why music affects
+                    the mood was vast and very inconclusive. </p>
+
+
+                <h3>2. Discovery</h3>
+
+                <p>Components of music that affects the mood are:</p>
+                <ul style="list-style-type: circle">
+                    <li>Valence (Spectrum of emotions in music)</li>
+                    <li>Energy/Arousal (Intensity and energy in music)</li>
+                    <li>Depth</li>
+                </ul>
+                <p>Components such as:</p>
+                <ul style="list-style-type: circle; margin-bottom: 0">
+                    <li>Frequency</li>
+                    <li>Key</li>
+                    <li>Chords</li>
+                </ul>
+                <p>were a dead end, since they are merely components of music, not the component that affect the
+                    moods.</p>
+
+                <div class="images">
+                    <img src="images/MusicalMoods/Folder_1/1.JPG" width="500" height="400" alt="">
+                    <img src="images/MusicalMoods/Folder_1/2.png" alt="" width="500" height="300">
+                </div>
+                <h3>3. Dataset</h3>
+
+                <p>We created our own database of songs from ten different genres’: classic rock, alternative rock,
+                    classical music, jazz, soul, country, techno/electronic, heavy metal, pop, and rap. Each genre had
+                    ten songs totaling 100 different songs. Each song was unique, and no artist or musician was used
+                    twice. Songs also ranged from the 1940’s to 2016.</p>
+
+                <p>Features we focused on:</p>
+                <ul style="list-style-type: circle">
+                    <li>Using the Spotify API in the backend we provided the music</li>
+                    <li>A scatterplot – with valence on the x axis and energy on the y axis. It categorizes the songs on
+                        the basis of the moods
+                    </li>
+                    <li>Hover effect to provide details about the songs</li>
+                    <li>A radar graph to compare upto 3 songs</li>
+                    <li>A song search option to search and categorize the song on to the scatterplot searched in real
+                        time
+                    </li>
+                    <li>An album search option to search and categorize the songs of the album on to the scatterplot in
+                        real time
+                    </li>
+                    <li>Option to play the song chosen</li>
+                    <li>4 visualizations of the sound waves of the song playing</li>
+                </ul>
+
+                <h3>6. Low-fidelity sketches</h3>
+
+                <div class="images">
+                    <img src="images/MusicalMoods/Folder_3/1.jpg" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_4/1.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_4/2.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_4/3.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_4/4.JPG" style="" width="500" height="300" alt="">
+                </div>
+                <h3>7. Prototype</h3>
+
+                <div class="images">
+                    <img src="images/MusicalMoods/Folder_2/2.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_2/3.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_2/4.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_2/5.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_2/6.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_2/7.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_2/8.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_2/9.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_2/10.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_2/11.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_2/12.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_2/13.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_2/14.JPG" style="" width="500" height="300" alt="">
+                    <img src="images/MusicalMoods/Folder_2/15.JPG" style="" width="500" height="300" alt="">
+                </div>
+            </div>
+
+            <section id="navigation" class="main special">
+                <header class="major">
+                    <h2>You can also view</h2>
+                </header>
+
+                <div>
+                    <ul>
+                        <li id="incampus">InCampus Navigator</li>
+                        <li id="eduassist">Edu-Assist</li>
+                        <li id="blindtype">Blind Typing</li>
+                        <li id="smartcc">Sma.C.C</li>
+                        <li id="stui">STUI</li>
+                    </ul>
+                </div>
+
+            </section>
+    </div>
+
+
+    </section>
+
+    <!-- Get Started -->
+    <section id="second" class="main special">
+        <header class="major">
+            <h2>Insights</h2>
+            <ul style="list-style-type: circle; text-align: left">
+                <li>EACH SONG INFLUENCES A MOOD</li>
+                <li>This is NOT based on frequency!</li>
+                <li>It is based on Energy and Valence</li>
+                <li>For any individual song, the opposite moods are not necessarily complementary, that is if a song is
+                    60% happy, it doesn’t make the song 40% sad. But, it can also never happen that a song is a great %
+                    happy and sad at the same time.
+                </li>
+                <li>For any individual song, the opposite moods are not necessarily complementary, that is if a song is
+                    60% happy, it doesn’t make the song 40% sad. But, it can also never happen that a song is a great %
+                    happy and sad at the same time.
+                </li>
+            </ul>
+        </header>
+    </section>
+
+    <!-- Get Started -->
+    <section id="cta" class="main special">
+        <header class="major">
+            <h2>Learning and Future Scope</h2>
+            <ul style="list-style-type: circle; text-align: left">
+                <li>Comparison of multiple albums</li>
+                <li>Ability to create playlists</li>
+                <li>Comparison of various songs by the same artist</li>
+                <li>Comparison of various songs by the same artist</li>
+                <li>Making the website more visually appealing</li>
+            </ul>
+        </header>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+    <section>
+        <h3>A Perfect Design + Great Functionality = Happy User</h3>
+    </section>
+    <section>
+        <h3>Let's design! Contact me soon!</h3>
+        <dl class="alt">
+            <dt>Address</dt>
+            <dd>Indianapolis, Indiana USA</dd>
+            <dt>Phone</dt>
+            <dd>(314) 201-0701, (317) 210 0277</dd>
+            <dt>Email</dt>
+            <dd>swapchan@iupui.edu, schandra.gem@gmail.com</dd>
+        </dl>
+        <ul class="icons">
+            <li><a href="https://www.linkedin.com/in/swapchan/" class="icon fa-linkedin  alt"><span class="label">LinkedIn</span></a>
+            </li>
+            <li><a href="https://github.com/swapchan1" class="icon fa-github alt"><span class="label">GitHub</span></a>
+            </li>
+        </ul>
+    </section>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+<script>
+
+    $("#eduassist").click(function () {
+        window.location.href = "EduAssist.html";
+    });
+
+    $("#incampus").click(function () {
+        window.location.href = "InCampusLocator.html";
+    });
+
+    $("#musicalmoods").click(function () {
+        window.location.href = "MusicalMoods.html";
+    });
+
+    $("#blindtype").click(function () {
+        window.location.href = "BlindTyping.html";
+    });
+
+    $("#smartcc").click(function () {
+        window.location.href = "Sma.C.C..html";
+    });
+
+    $("#stui").click(function () {
+        window.location.href = "TUI.html";
+    });
+</script>
+</body>
+</html>
