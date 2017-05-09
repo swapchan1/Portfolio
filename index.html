@@ -50,31 +50,31 @@
 								</header>
 								<ul class="features">
 									<li id="incampus">
-										<span class="icon major style1 fa-code"></span>
+										<span class="icon major style1" ><img src="images/incampuslogo.JPG" style="height: 100px; width:100px"></span>
 										<h3>InCampus Navigator</h3>
 										<p>New campus. Unknown routes. Let technology guide you.</p>
 									</li>
 									<li id="eduassist">
-										<span class="icon major style3 fa-copy"></span>
+										<span class="icon major style3"><img src="images/Edu-Assist/dp.JPG" style="height: 100px; width:100px"></span>
 										<h3>Edu-Assist</h3>
 										<p>Let current students and the technology be your guide for higher education.</p>
 									</li>
 									<li id="musicalmoods">
-										<span class="icon major style5 fa-diamond"></span>
+										<span class="icon major style5"><img src="images/MusicalMoodsdp.JPG" style="height: 100px; width:100px"></span>
 										<h3>Musical Moods</h3>
 										<p>Music influences mood - Choose the music by choosing the mood you want to be in. </p>
 									</li>
 									<li id="blindtype">
-										<span class="icon major style1 fa-code"></span>
+										<span class="icon major style1"><img src="" style="height: 100px; width:100px"></span>
 										<h3>Blind Typing</h3>
 										<p>Texting is easy, even without a keyboard.</p>
 									</li>
-									<li id="smartcc">
+									<li id="smartcc" style="display: none">
 										<span class="icon major style3 fa-copy"></span>
 										<h3>Sma.C.C.</h3>
 										<p>Smart Conference Card to take care of the tasks while you enjoy the conference.</p>
 									</li>
-									<li id="stui">
+									<li id="stui" style="display: none">
 										<span class="icon major style5 fa-diamond"></span>
 										<h3>STUI</h3>
 										<p>Student Tangible User Interface</p>
@@ -128,32 +128,27 @@
 								-->
 								</header>
 								<ul class="statistics">
-									<li class="style1">
+									<li class="style1 active" id="understand">
 										<strong>Understand</strong>
 									</li>
-									<li class="style2">
+									<li class="style2"id="research">
 										<strong>Research</strong>
 									</li>
-									<li class="style3">
+									<li class="style3" id="sketch">
 										<strong>Sketch</strong>
 									</li>
-									<li class="style4">
+									<li class="style4" id="discuss">
 										<strong>Discuss</strong>
 									</li>
-									<li class="style5">
+									<li class="style5" id="proto">
 										<strong>Prototype</strong>
 									</li>
-									<li class="style6">
+									<li class="style6" id="test">
 										<strong>Test</strong>
 									</li>
 								</ul>
-								<p>
-								Understand: Understand and relate to the problem so that I can think from the user's point of view
-								<br/>Research: Research on the problem, the target audience, the users who are facing the problem. This helps me gain a better vision of the solution required
-									<br/>Sketch: Sketch a few ideas of my vision so that I can understand the ideal positions of all the required functionalities
-									<br/>Discuss: Discuss the sketch ideas with the client and the target audience to understand the impact of my design
-									<br/>Prototype: Prototype a hifidelity view of the sketches to better portray my idea and designs
-									<br/>Test: Test my designs with the prospective users to make the designs better till they provide the users with the best experience
+								<p id="selectedstat">
+									Understand: Understand and relate to the problem so that I can think from the user's point of view
 								</p>
 							</section>
 
@@ -233,6 +228,38 @@
 				$("#stui").click(function(){
 					window.location.href = "TUI.html";
 				});
+
+				$("#understand").click(function(){
+					$(".statistics li.active").removeClass("active");
+					$("#understand").addClass("active");
+					$("#selectedstat").html("Understand: Understand and relate to the problem so that I can think from the user's point of view");
+				});
+				$("#research").click(function(){
+					$(".statistics li.active").removeClass("active");
+					$("#research").addClass("active");
+					$("#selectedstat").html("Research: Research on the problem, the target audience, the users who are facing the problem. This helps me gain a better vision of the solution required");
+				});
+				$("#sketch").click(function(){
+					$(".statistics li.active").removeClass("active");
+					$("#sketch").addClass("active");
+					$("#selectedstat").html("Sketch: Sketch a few ideas of my vision so that I can understand the ideal positions of all the required functionalities");
+				});
+				$("#discuss").click(function(){
+					$(".statistics li.active").removeClass("active");
+					$("#discuss").addClass("active");
+					$("#selectedstat").html("Discuss: Discuss the sketch ideas with the client and the target audience to understand the impact of my design");
+				});
+				$("#proto").click(function(){
+					$(".statistics li.active").removeClass("active");
+					$("#proto").addClass("active");
+					$("#selectedstat").html("Prototype: Prototype a hifidelity view of the sketches to better portray my idea and designs");
+				});
+				$("#test").click(function(){
+					$(".statistics li.active").removeClass("active");
+					$("#test").addClass("active");
+					$("#selectedstat").html("Test: Test my designs with the prospective users to make the designs better till they provide the users with the best experience");
+				});
+
 			</script>
 	</body>
 </html>
