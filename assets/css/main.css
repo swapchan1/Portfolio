@@ -3221,16 +3221,19 @@ table.alt tbody tr td {
     width: calc(33.33333% - 2em);
     margin-left: 2em;
     margin-top: 3em;
-    padding: 0;
+    padding: 20px;
     transition: 0.5s;
+
 }
 
 .features li:hover {
     width: calc(33.33333% - 2em);
     margin-left: 2em;
     margin-top: 3em;
-    padding: 0;
+    padding: 20px;
     background: #b1fcb1;
+    cursor: pointer;
+
 }
 
 .features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
@@ -3295,6 +3298,10 @@ table.alt tbody tr td {
     color: #ffffff;
     text-align: center;
     opacity: 0.6;
+}
+
+.statistics li:hover {
+    cursor: pointer;
 }
 
 .statistics li.active {
