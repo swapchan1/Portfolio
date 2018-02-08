@@ -3236,7 +3236,8 @@ table.alt tbody tr td {
 
 }
 
-.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
+.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3), .features li:nth-child(4),
+.features li:nth-child(5), .features li:nth-child(6), .features li:nth-child(7), .features li:nth-child(8) {
     margin-top: 0;
 }
 
