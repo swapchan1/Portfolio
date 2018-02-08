@@ -16,7 +16,7 @@
 <body id="home">
   <nav>
     <a href="index.html">
-      <h3 style="float: left; margin-left:70px; margin-top: 70px">SWAPNIL CHANDRA</h3>
+      <h3 style="float: left; margin-left:70px; margin-top: 70px">SWAPNIL CHANDRA | Home</h3>
     </a>
 
   </nav>
@@ -29,7 +29,7 @@
         <img src="images/Edu-Assist/edu-assist.JPG" alt="" width="150x" height="120px" />
       </span>
       <h1>Edu-Assist</h1>
-      <p>Let current students and the technology be your guide for higher education.</p>
+      <p>Renting becomes easy.</p>
     </header>
 
     <!-- Nav -->
@@ -73,14 +73,16 @@
             a few universities and majors as suggestions based on a machine learning algorithm, along with an overview of
             all the universities and their majors. Due to the uncertain location constraint, we chose a mobile application
             as our solution. </p>
-          <div style="width:400px; display: inline-block;">
-            <h3>My Role:</h3>
-            <p>This project was a team effort. I led the
-              <strong>Empathize</strong> and the
-              <strong>Prototyping</strong> phase of the project.</p>
+
+          <h3>My Role:</h3>
+          <p>This project was a team effort. I led the
+            <strong>Empathize</strong> and the
+            <strong>Prototyping</strong> phase of the project.
+          </p>
+
+          <div style="min-width:50%; display: inline-block;">
             <h3>Steps:</h3>
-            <!--<p>We followed the following steps to go about the problem:</p>-->
-            <ol>
+            <ul style="list-style-type: circle">
               <li>Understanding the problem</li>
               <li>Persona</li>
               <li>Affinity Mapping</li>
@@ -89,9 +91,11 @@
               <li>Low-fidelity sketches</li>
               <li>Hi-fidelity prototype</li>
               <li>User testing</li>
-            </ol>
+            </ul>
+          </div>
+
+          <div style="min-width:45%; display: inline-block;;vertical-align:top">
             <h3>Tools used:</h3>
-            <!--<p>Tools we used during the project are:</p>-->
             <ul style="list-style-type: circle">
               <li>Pencil and Paper</li>
               <li>Stormboard.com</li>
@@ -103,10 +107,9 @@
 
           <ul class="actions" style="text-align: center">
             <li>
-              <a href="final%20Reports/EduAssist.pdf" class="button">Report</a>
+              <a href="final_Reports/EduAssist.pdf" target="_blank" class="button">Report</a>
             </li>
           </ul>
-
         </div>
       </section>
       <!-- Introduction -->
@@ -563,11 +566,8 @@
 
         <div>
           <ul>
-            <li id="incampus">InCampus Navigator</li>
-            <li id="musicalmoods">Musical Moods</li>
-            <li id="blindtype">BlindTyping</li>
-            <!--<li id="smartcc">Sma.C.C</li>
-										<li id="stui">STUI</li>-->
+            <li id="amazon">Amazon DIY</li>
+            <li id="riley">ICANSCAN</li>
           </ul>
         </div>
 
@@ -645,6 +645,14 @@
 
     $("#stui").click(function () {
       window.location.href = "TUI.html";
+    });
+
+    $("#amazon").click(function () {
+      window.location.href = "amazon.html";
+    });
+
+    $("#riley").click(function () {
+      window.location.href = "riley.html";
     });
   </script>
 </body>
